@@ -1,0 +1,49 @@
+.block{
+    background-color: gainsboro;
+    flex: 1;
+    min-width: 640px;
+}
+.block--wrapper{
+display: flex;
+flex-flow: row;
+background-color: red;
+justify-content: center;
+}
+
+.block--blue {
+    background-color: blue;
+}
+.block--lightBlue {
+    background-color: lightblue;
+}
+.block__headline{
+
+}
+.block__text{
+
+}
+.block__form{
+    background: red;
+}
+canvas#canvas {
+    width: 640px;
+    height: 640px;
+    position: relative;
+}
+#canvasTitle, #canvasAuthor {
+    color: white;
+    z-index: 9999;
+    position: absolute;
+}
+
+@media only screen and (max-width: 1010px) {
+    .block--wrapper{
+        flex-wrap: wrap;
+        background-color: purple;
+        }
+        .block{
+            width: 100%;
+            flex: initial;
+        }
+
+  }

@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jps</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="block block--wrapper">
+
+        <div class="block block--lightBlue">
+                <canvas id="myCanvas" width="640" height="200"
+                style="border:1px solid #d3d3d3;">
+                Your browser does not support the canvas element.
+                </canvas>
+        </div>
+        
+        <div class="block block--blue">
+            <h1 class="block__headline">Form</h1> 
+            <p class="block__text">xxx</p>
+
+            <form class="block__form">
+            <p class="block__input">
+                    <img id="scream" width="220" height="277"
+                    src="./imgs/quote_tweeter.jpg" alt="The Scream">
+               <input id="inputFileToLoad" type="file"  onchange="encodeImageFileAsURL(this)"  />
+            </p>
+            <p class="block__input">
+                    <input type="text"  id="title">
+            </p>
+            <p class="block__input">
+                    <input type="text"  id="author">
+            </p>
+            <p class="block__input">
+                    <input id='save' class="favorite styled"
+                    type="button"
+                    value="save"
+                    >
+                   
+            </p>
+        </form>
+
+        </div>
+</div>
+
+<script src="./main.js"></script>
+</body>
+</html>
